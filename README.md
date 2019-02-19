@@ -1,5 +1,5 @@
-# Project ePars and Modules
+**Project ePars and Modules**
  It's self project for testing project API and other idea
  
-// today have
- - ProgressBar (with percent and indeterminate)
+**Today have**
+ - [![](https://jitpack.io/v/JastAir/eParsProject_WIthModules.svg)](https://jitpack.io/#JastAir/eParsProject_WIthModules) ProgressBar (with percent and indeterminate)
