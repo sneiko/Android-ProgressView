@@ -21,7 +21,7 @@ Add it in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
 
 	dependencies {
-	        implementation 'com.github.JastAir:Android-ProgressView:Tag'
+	        implementation 'com.github.JastAir:Android-ProgressView:{version}'
 	}
 
 
