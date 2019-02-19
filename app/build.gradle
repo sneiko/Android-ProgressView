@@ -6,7 +6,7 @@ apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.fdev.epars"
+        applicationId "com.fdev.progressviewexample"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
@@ -21,17 +21,6 @@ android {
     }
 }
 
-// lib versions
-ext {
-    v_dagger = "2.21"
-    v_rxjava = "2.2.6"
-    v_rxandroid = "2.1.1"
-    v_rxbindings = "3.0.0-alpha2"
-    v_retrofit = "2.5.0"
-    v_retrofit_rx_adapter = "2.0.2"
-    v_okhttp_logging_interc = "3.10.0"
-}
-
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
@@ -44,31 +33,5 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 
-    // retrofit
-    implementation "com.squareup.retrofit2:retrofit:$v_retrofit"
-    implementation "com.squareup.retrofit2:converter-gson:$v_retrofit"
-    implementation "com.squareup.retrofit2:adapter-rxjava:$v_retrofit_rx_adapter"
-    implementation "com.squareup.okhttp3:logging-interceptor:$v_okhttp_logging_interc"
-
-    // dagger 2
-    implementation "com.google.dagger:dagger:$v_dagger"
-    kapt "com.google.dagger:dagger-compiler:$v_dagger"
-    annotationProcessor "com.google.dagger:dagger-compiler:$v_dagger"
-
-    // reactiveX
-    implementation "io.reactivex.rxjava2:rxjava:$v_rxjava"
-    implementation "io.reactivex.rxjava2:rxandroid:$v_rxandroid"
-
-    //rxBindings
-    implementation "com.jakewharton.rxbinding3:rxbinding:$v_rxbindings"
-    implementation "com.jakewharton.rxbinding3:rxbinding-core:$v_rxbindings"
-    implementation "com.jakewharton.rxbinding3:rxbinding-appcompat:$v_rxbindings"
-    implementation "com.jakewharton.rxbinding3:rxbinding-drawerlayout:$v_rxbindings"
-    implementation "com.jakewharton.rxbinding3:rxbinding-leanback:$v_rxbindings"
-    implementation "com.jakewharton.rxbinding3:rxbinding-recyclerview:$v_rxbindings"
-    implementation "com.jakewharton.rxbinding3:rxbinding-slidingpanelayout:$v_rxbindings"
-    implementation "com.jakewharton.rxbinding3:rxbinding-swiperefreshlayout:$v_rxbindings"
-    implementation "com.jakewharton.rxbinding3:rxbinding-viewpager:$v_rxbindings"
-    implementation "com.jakewharton.rxbinding3:rxbinding-material:$v_rxbindings"
     implementation project(':progressview')
 }

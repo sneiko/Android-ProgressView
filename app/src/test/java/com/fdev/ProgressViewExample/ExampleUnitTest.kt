@@ -1,4 +1,4 @@
-package com.fdev.epars
+package com.fdev.ProgressViewExample
 
 import org.junit.Test
 
